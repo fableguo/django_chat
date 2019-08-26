@@ -79,8 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'mydb',
-        'HOST': '192.168.99.106',
-        'PORT': 27017,
+        'HOST': '192.168.99.106:27017,192.168.99.107:27018,192.168.99.108:27019',
         'REPLICASET': 'example'
     }
 }

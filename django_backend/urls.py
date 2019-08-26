@@ -25,5 +25,5 @@ router.register(r'music', views.MusicViewSet)
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/', hello_view),
-    url(r'api/', include(router.urls))
+    url(r'^api/', include(router.urls))
 ]
