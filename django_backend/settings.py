@@ -26,6 +26,7 @@ SECRET_KEY = '0au@rtyzol0_yl+^fmr5#!9m8_m*e)tk5r02!8z*h1^x+amt*p'
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
+                 'info.cern.ch',
                  '192.168.99.103',
                  '192.168.99.104',
                  '192.168.99.105',
