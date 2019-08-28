@@ -13,6 +13,10 @@ RUN apt-get update
 RUN apt-get install -y git
 RUN git clone https://guofable@bitbucket.org/guofable/django_chat.git
 
+CMD echo "start git download"
+CMD git pull
+CMD echo "end git download"
+
 CMD sudo echo "192.168.99.106  mongo1" >> /etc/hosts
 CMD sudo echo "192.168.99.107  mongo2" >> /etc/hosts
 CMD sudo echo "192.168.99.108  mongo3" >> /etc/hosts

@@ -27,5 +27,3 @@ urlpatterns = [
     url(r'^hello/', hello_view),
     url(r'^api/', include(router.urls))
 ]
-
-ALLOWED_HOSTS = ['192.168.99.*']
