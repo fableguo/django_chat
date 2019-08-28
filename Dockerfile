@@ -4,7 +4,8 @@ ENV PYTHONUNBUFFERED 1
 
 RUN mkdir /docker_api
 WORKDIR /docker_api
-COPY . /docker_api/
+COPY Dockerfile /docker_api/
+COPY requirements.txt /docker_api/
 
 RUN pip3 install -r requirements.txt
 #RUN pip3 install django<2.0 psycopg2 djangorestframework==3.8.1 djongo django_mongodb_engine
