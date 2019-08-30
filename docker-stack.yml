@@ -14,6 +14,8 @@ services:
           parallelism: 2
         restart_policy:
           condition: on-failure
+        placement:
+          constraints: [node.labels.backend == backend]
       extra_hosts:
         - "mongo1:192.168.99.106"
         - "mongo2:192.168.99.107"
