@@ -18,8 +18,10 @@ CMD echo "start git download"
 CMD git pull
 CMD echo "end git download"
 
-CMD sudo echo "192.168.99.106  mongo1" >> /etc/hosts
-CMD sudo echo "192.168.99.107  mongo2" >> /etc/hosts
-CMD sudo echo "192.168.99.108  mongo3" >> /etc/hosts
+CMD echo "192.168.99.106  mongo1" >> /etc/hosts
+CMD echo "192.168.99.107  mongo2" >> /etc/hosts
+CMD echo "192.168.99.108  mongo3" >> /etc/hosts
 
 CMD python3 django_chat/manage.py runserver 0.0.0.0:8000
+
+EXPOSE 8000
